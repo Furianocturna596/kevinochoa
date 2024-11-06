@@ -1,0 +1,380 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #211e1e;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #191515;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer{
+    flex-wrap: nowrap;
+}
+
+.section-fullscreen {
+    height: 100vh;
+    background: url('https://scontent-bog2-2.xx.fbcdn.net/v/t39.30808-6/278609909_389831102992354_57178885966674128_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH93ErGJjbeOMHc5xHMnN3l4HRqQMwVs9ngdGpAzBWz2QHVNmX1kF9iZDj6RBeomzdV9YQizOHRpxXhbLcWT-gg&_nc_ohc=TxgpuwRgJ3wQ7kNvgGnBNwe&_nc_zt=23&_nc_ht=scontent-bog2-2.xx&_nc_gid=Aluqh7WXNCATW3IyI1EFzrK&oh=00_AYAcMjG-bluXrzUNjo6psFqumIVBViETUO2EXQbWEih8tA&oe=6731CDD6') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 80px;
+    color: #fff;
+    text-align: center;
+}
+
+.section-content {
+    padding: 60px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.portfolio-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    transition: transform 0.4s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.5);
+}
+
+/* Estilos para la sección "Selección Argentina" */
+.seleccion-argentina {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #000000;
+}
+
+.seleccion-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.seleccion-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: #e58e9a; /* Fondo para "SELECCIÓN" */
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.seleccion-content h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: #333; /* Fondo para "ARGENTINA" */
+    color: #e58e9a;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.seleccion-content p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.seleccion-image {
+    flex: 1;
+    position: relative;
+}
+
+.seleccion-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.seleccion-image img{
+    width: 100%;
+    transition: transform 0.4s;
+}
+.seleccion-image:hover img{
+    transform: scale(1.2);
+}
+
+
+/* Estilos para la sección "Mejores del Mundo" */
+.mejores-del-mundo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #b7a9a9;
+    position: relative;
+}
+
+.mejores-content {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.mejores-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: #e58e9a; /* Fondo para "UNO DE LOS" */
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.mejores-content h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: #333; /* Fondo para "MEJORES DEL MUNDO" */
+    color: #e58e9a;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.mejores-content p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.mejores-image {
+    flex: 1;
+    position: relative;
+}
+
+.mejores-image .main-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    filter: grayscale(100%) sepia(50%) hue-rotate(-20deg); /* Filtro de color */
+    object-fit: cover;
+}
+
+.mejores-image .small-image {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 200px;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilos para la sección de "Debut y Magia" */
+.debut-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #171414;
+}
+
+.debut-content {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.debut-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    background-color: #07cfe1; /* Color de fondo para "DEBUT" */
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.debut-content h2 {
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #333; /* Color de fondo para "Y MAGIA" */
+    color: #17c2ce;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.debut-content p {
+    font-size: 1em;
+    color: #c1c1c1;
+    line-height: 1.5;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.debut-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.debut-image img {
+    width: 100%;
+    max-width: 600px;
+    gap: 10px;
+    height: auto;
+    object-fit: cover;
+}
+
+.debut-image img{
+    width:80%;
+    transition: transform 0.4s;
+}
+.debut-image:hover img{
+    transform: scale(1.1);
+}
+
+/* Estilos para la sección de "trailer" */
+.video-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #171414;
+}
+
+.video-css{
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.video-css h1{
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #745577; /* Color de fondo para "DEBUT" */
+    color: #ddd;
+    padding: 10px 20px;
+    margin: 0;
+}
+.video-css h2{
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #333; /* Color de fondo para "Y MAGIA" */
+    color: #17c2ce;
+    padding: 10px 20px;
+    margin: 0;
+}
+.video-css p{
+    font-size: 1em;
+    color: #c1c1c1;
+    line-height: 1.5;
+    margin-top: 20px;
+    max-width: 500px
+}
+
+.trailer{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trailer video{
+    width: 300px;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover
+}
+
+
+/* Contact form */
+#contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.footer-content a {
+    color: #e58e9a;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
