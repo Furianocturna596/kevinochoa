@@ -1,0 +1,487 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: fantasy;
+   
+}
+
+.Menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer{
+    flex-wrap: nowrap;
+}
+
+.social img {
+    height: 20px;
+   margin-top: 20px;
+   margin-left: 10px;
+}
+
+/* Main Content */
+main {
+    background-image: url("img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 90px);
+    padding: 50px;
+}
+
+.content h1 {
+    font-size: 50px;
+    line-height: 1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content h2 {
+    font-size: 50px;
+    color: #e53935;
+    margin-bottom: 30px;
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 900px;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #0000009a;
+}
+
+.buttons .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.buttons .btn.red {
+    background-color: #e53935;
+    color: #fff;
+}
+
+.spiderman-image img {
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 80px;
+    color: #fff;
+    text-align: center;
+}
+
+.section-content {
+    padding: 60px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.portfolio-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    transition: transform 0.4s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.5);
+}
+
+
+
+/* Estilos para la sección "Selección Argentina" */
+.seleccion-argentina {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #000000;
+}
+
+.seleccion-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.seleccion-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: #e58e9a; /* Fondo para "SELECCIÓN" */
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.seleccion-content h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: #333; /* Fondo para "ARGENTINA" */
+    color: #e58e9a;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.seleccion-content p {
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.seleccion-image {
+    flex: 1;
+    position: relative;
+}
+
+.seleccion-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.seleccion-image img{
+    width: 100%;
+    transition: transform 0.4s;
+}
+.seleccion-image:hover img{
+    transform: scale(1.2);
+}
+
+
+/* Estilos para la sección "Mejores del Mundo" */
+.mejores-del-mundo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #b7a9a9;
+    position: relative;
+}
+
+.mejores-content {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.mejores-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: #e58e9a; /* Fondo para "UNO DE LOS" */
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.mejores-content h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: #333; /* Fondo para "MEJORES DEL MUNDO" */
+    color: #e58e9a;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.mejores-content p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.mejores-image {
+    flex: 1;
+    position: relative;
+}
+
+.mejores-image .main-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    filter: grayscale(100%) sepia(50%) hue-rotate(-20deg); /* Filtro de color */
+    object-fit: cover;
+}
+
+.mejores-image .small-image {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 200px;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilos para la sección de "Debut y Magia" */
+.debut-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #171414;
+}
+
+.debut-content {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.debut-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    background-color: #07cfe1; /* Color de fondo para "DEBUT" */
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.debut-content h2 {
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #333; /* Color de fondo para "Y MAGIA" */
+    color: #17c2ce;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.debut-content p {
+    font-size: 1em;
+    color: #c1c1c1;
+    line-height: 1.5;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.debut-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.debut-image img {
+    width: 100%;
+    max-width: 600px;
+    gap: 10px;
+    height: auto;
+    object-fit: cover;
+}
+
+.debut-image img{
+    width:80%;
+    transition: transform 0.4s;
+}
+.debut-image:hover img{
+    transform: scale(1.1);
+}
+
+/* Estilos para la sección de "trailer" */
+.video-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #171414;
+}
+
+.video-css{
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.video-css h1{
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #745577; /* Color de fondo para "DEBUT" */
+    color: #ddd;
+    padding: 10px 20px;
+    margin: 0;
+}
+.video-css h2{
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #333; /* Color de fondo para "Y MAGIA" */
+    color: #17c2ce;
+    padding: 10px 20px;
+    margin: 0;
+}
+.video-css p{
+    font-size: 1em;
+    color: #c1c1c1;
+    line-height: 1.5;
+    margin-top: 20px;
+    max-width: 500px
+}
+
+.trailer{
+    flex: 1;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.trailer video{
+    width: 300px;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover
+}
+
+
+/* Contact form */
+#contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.footer-content a {
+    color: #e58e9a;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos básicos para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos generales para secciones */
+  section {
+    padding: 20px;
+  }
+  
+  /* Estilos para la galería de portafolio (cuadrícula de imágenes) */
+  .portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  /* Ajustes para dispositivos móviles */
+  @media (max-width: 768px) {
+    .portfolio-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .portfolio-gallery {
+      grid-template-columns: 1fr;
+    }
+  
+    header {
+      font-size: 20px;
+    }
+  }
+  
